@@ -5,6 +5,7 @@ import Footer from '../components/footer'
 import OtherImage from '../components/OtherImage'
 import Navbar from '../components/Navbar'
 import Link from 'next/link'
+import Router from 'next/router'
 
 const Home: NextPage = () => {
   return (
@@ -69,10 +70,10 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className=' w-full flex text-white bg-[#FF5005] justify-center items-center py-6  ' >
-        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Twitter</Link>
-        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Linkedin</Link>
-        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Instagram</Link>
-        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Facebook</Link>
+        <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Twitter</button>
+        <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Linkedin</button>
+        <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Instagram</button>
+        <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Facebook</button>
       </div>
       <div className=' w-auto py-6 dashboardslide overflow-x-auto flex  items-center' >
         <div>
