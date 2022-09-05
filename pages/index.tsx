@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Footer from '../components/footer'
 import OtherImage from '../components/OtherImage'
 import Navbar from '../components/Navbar'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -32,47 +33,47 @@ const Home: NextPage = () => {
           <p className='lg:w-[529px] NotoSan-300 lg:text-2xl' >We invest noteworthy energy in wedding photography, corporate, family and senior pictures, normally heading off to your objective to get the perfect moment in the perfect place.</p>
         </div >
         <div className=' w-full  lg:mt-0 mt-6  ' > 
-          <img src="/images/Two.png" alt='one' className=' w-full lg:w-639px lg:h-702px ' /> 
+          <img  src="/images/Two.png" alt='one' className=' w-full lg:w-639px lg:h-702px ' /> 
         </div> 
       </div>
       <div className=' w-full flex flex-col  lg:mt-0 mt-12 text-white' >
         <p className=' Raleway text-2xl text-center lg:text-end lg:ml-auto px-6 lg:px-20 ' >Porfolio</p>
         <a href='#' className=' mt-12 pt-5 px-6 lg:mt-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Beauty</p>
-          <img src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
+          <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
         </a>
         <a href='#' className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >LifeStyle</p>
-          <img src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
+          <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
         </a>
         <a href='#' className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Family</p>
-          <img src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
+          <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
         </a>
         <a href='#' className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Portrait</p>
-          <img src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
+          <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
         </a>
         <a href='#' className=' mt-6 py-5 px-6 lg:px-20 w-full flex border-t border-b border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Documentary</p>
-          <img src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
+          <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
           {/* <Image src="/images/arrow-up-right.png" width={60} height={60} /> */}
         </a>
       </div>
       <div className=' w-full flex items-center lg:flex-row flex-col py-16 ' >
         <div className=' w-full flex justify-center ' >
-          <img src="/images/Three.png" className=' w-full h-full lg:w-[518px] lg:h-[584px]' /> 
+          <img alt="2342" src="/images/Three.png" className=' w-full h-full lg:w-[518px] lg:h-[584px]' /> 
         </div>
         <div className=' w-full flex justify-center pt-10 lg:pt-80 ' >
-          <img src="/images/Four.png" className=' w-full h-full lg:w-[518px] lg:h-[584px]' /> 
+          <img alt="2342" src="/images/Four.png" className=' w-full h-full lg:w-[518px] lg:h-[584px]' /> 
           {/* <Image src="/images/Four.png" width={518} height={584} /> */}
         </div>
       </div>
       <div className=' w-full flex text-white bg-[#FF5005] justify-center items-center py-6  ' >
-        <a href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 ' >Twitter</a>
-        <a href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 ' >Linkedin</a>
-        <a href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 ' >Instagram</a>
-        <a href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 ' >Facebook</a>
+        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Twitter</Link>
+        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Linkedin</Link>
+        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Instagram</Link>
+        <Link href='#' className=' NotoSan-400 mx-3 text-sm lg:mx-6 cursor-pointer ' >Facebook</Link>
       </div>
       <div className=' w-auto py-6 dashboardslide overflow-x-auto flex  items-center' >
         <div>

@@ -26,14 +26,14 @@ export default function Portfolio(){
                 {tab === 0 && ( 
                     <div className=" flex flex-col ml-20 mb-20 " >
                         <div className=" grid grid-cols-2 gap-6" >
-                            <img src="/images/Beauty/1.png" className=" w-80" />
-                            <img src="/images/Beauty/2.png" className=" w-80" />
-                            <img src="/images/Beauty/3.png" className=" w-80" />
-                            <img src="/images/Beauty/4.png" className=" w-80" />
-                            <img src="/images/Beauty/5.png" className=" w-80" />
-                            <img src="/images/Beauty/6.png" className=" w-80" />
-                            <img src="/images/Beauty/7.png" className=" w-80" />
-                            <img src="/images/Beauty/8.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/1.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/2.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/3.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/4.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/5.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/6.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/7.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/8.png" className=" w-80" />
                         </div>
                     </div>
                 )}
@@ -41,57 +41,57 @@ export default function Portfolio(){
                     <div className=" flex flex-col ml-20 mb-20 " >
                         <div className="flex flex-col" >
                             <div className=" flex " >
-                                <img src="/images/lifestyle/1.png" className=" w-80 mr-3" />
-                                <img src="/images/lifestyle/5.png" className=" w-80 ml-3" />
+                                <img alt='gallery' src="/images/lifestyle/1.png" className=" w-80 mr-3" />
+                                <img alt='gallery' src="/images/lifestyle/5.png" className=" w-80 ml-3" />
                             </div>
-                            <img src="/images/lifestyle/2.png" className=" w-full my-6" />
+                            <img alt='gallery' src="/images/lifestyle/2.png" className=" w-full my-6" />
                             <div className=" flex " >
-                                <img src="/images/lifestyle/3.png" className=" w-80 mr-3" />
-                                <img src="/images/lifestyle/6.png" className=" w-80 ml-3" />
+                                <img alt='gallery' src="/images/lifestyle/3.png" className=" w-80 mr-3" />
+                                <img alt='gallery' src="/images/lifestyle/6.png" className=" w-80 ml-3" />
                             </div>
-                            <img src="/images/lifestyle/4.png" className=" w-full my-6" />
+                            <img alt='gallery' src="/images/lifestyle/4.png" className=" w-full my-6" />
                         </div> 
                     </div>
                 )}
                 {tab === 2 && ( 
                     <div className=" flex flex-col ml-20 mb-20 " >
                         <div className=" grid grid-cols-2 gap-6" >
-                            <img src="/images/family/2.png" className=" w-80" />
-                            <img src="/images/Beauty/5.png" className=" w-80" />
-                            <img src="/images/family/3.png" className=" w-80" />
-                            <img src="/images/family/4.png" className=" w-80" />
-                            <img src="/images/family/5.png" className=" w-80" />
-                            <img src="/images/family/6.png" className=" w-80" />
-                            <img src="/images/family/7.png" className=" w-80" />
-                            <img src="/images/family/8.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/2.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Beauty/5.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/3.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/4.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/5.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/6.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/7.png" className=" w-80" />
+                            <img alt='gallery' src="/images/family/8.png" className=" w-80" />
                         </div>
                     </div>
                 )}
                 {tab === 3 && ( 
                     <div className=" flex flex-col ml-20 mb-20 " >
                         <div className=" grid grid-cols-2 gap-6" >
-                            <img src="/images/Portrait/1.png" className=" w-80" />
-                            <img src="/images/Portrait/2.png" className=" w-80" />
-                            <img src="/images/Portrait/3.png" className=" w-80" />
-                            <img src="/images/Portrait/4.png" className=" w-80" />
-                            <img src="/images/Portrait/5.png" className=" w-80" />
-                            <img src="/images/Portrait/6.png" className=" w-80" />
-                            <img src="/images/Portrait/7.png" className=" w-80" />
-                            <img src="/images/Portrait/8.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/1.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/2.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/3.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/4.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/5.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/6.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/7.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Portrait/8.png" className=" w-80" />
                         </div>
                     </div>
                 )}
                 {tab === 4 && ( 
                     <div className=" flex flex-col ml-20 mb-20 " >
                         <div className=" grid grid-cols-2 gap-6" >
-                            <img src="/images/Documentary/1.png" className=" w-80" />
-                            <img src="/images/Documentary/2.png" className=" w-80" />
-                            <img src="/images/Documentary/3.png" className=" w-80" />
-                            <img src="/images/Documentary/4.png" className=" w-80" />
-                            <img src="/images/Documentary/5.png" className=" w-80" />
-                            <img src="/images/Documentary/6.png" className=" w-80" />
-                            <img src="/images/Documentary/7.png" className=" w-80" />
-                            <img src="/images/Documentary/8.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/1.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/2.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/3.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/4.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/5.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/6.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/7.png" className=" w-80" />
+                            <img alt='gallery' src="/images/Documentary/8.png" className=" w-80" />
                         </div>
                     </div>
                 )}
