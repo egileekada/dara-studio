@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Router from 'next/router'
 import React from 'react'
 
@@ -6,7 +5,9 @@ export default function Navbar(props: any){
 
     return( 
         <div className=' w-full flex justify-between items-center fixed px-6 lg:px-12 z-40 py-3 lg:py-6 bg-black bg-opacity-30 text-white top-0 ' > 
-            <img alt='Navbar' src="/images/sbd.png" className=" w-10 lg:w-20 "  />
+            <button onClick={()=> Router.push("/")} >
+                <img alt='Navbar' src="/images/sbd.png" className=" w-10 lg:w-20 "  />
+            </button>
             <button> 
                 <img alt='Navbar' src="/images/roll.png" className=" w-12 lg:hidden "  />
             </button>
