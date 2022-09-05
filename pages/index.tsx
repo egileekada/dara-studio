@@ -42,27 +42,27 @@ const Home: NextPage = () => {
       </div>
       <div className=' w-full flex flex-col  lg:mt-0 mt-12 text-white' >
         <p className=' Raleway text-2xl text-center lg:text-end lg:ml-auto px-6 lg:px-20 ' >Porfolio</p>
-        <a href='#' className=' mt-12 pt-5 px-6 lg:mt-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
+        <button onClick={()=> {Router.push("/portfolio"), sessionStorage.setItem("tab", "0")}} className=' mt-12 pt-5 px-6 lg:mt-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Beauty</p>
           <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
-        </a>
-        <a href='#' className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
+        </button>
+        <button onClick={()=> {Router.push("/portfolio"), sessionStorage.setItem("tab", "1")}} className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >LifeStyle</p>
           <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
-        </a>
-        <a href='#' className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
+        </button>
+        <button onClick={()=> {Router.push("/portfolio"), sessionStorage.setItem("tab", "2")}} className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Family</p>
           <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
-        </a>
-        <a href='#' className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
+        </button>
+        <button onClick={()=> {Router.push("/portfolio"), sessionStorage.setItem("tab", "3")}} className=' mt-6 pt-5 px-6 lg:px-20 w-full flex border-t border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Portrait</p>
           <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
-        </a>
-        <a href='#' className=' mt-6 py-5 px-6 lg:px-20 w-full flex border-t border-b border-white justify-between items-center ' >
+        </button>
+        <button onClick={()=> {Router.push("/portfolio"), sessionStorage.setItem("tab", "4")}} className=' mt-6 py-5 px-6 lg:px-20 w-full flex border-t border-b border-white justify-between items-center ' >
           <p className=' NotoSan-300 lg:text-2xl ' >Documentary</p>
           <img alt="2342" src="/images/arrow-up-right.png" className=' w-8 h-8 lg:w-14 lg:h-14' />
           {/* <Image src="/images/arrow-up-right.png" width={60} height={60} /> */}
-        </a>
+        </button>
       </div>
       <div className=' w-full flex items-center lg:flex-row flex-col py-16 ' >
         <div className=' w-full flex justify-center ' >
