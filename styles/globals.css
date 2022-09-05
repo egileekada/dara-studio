@@ -1,26 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css?family=Noto+San&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.NotoSan-300 {
+    font-family: Noto Sans;
+    font-weight: 400;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.NotoSan-400 {
+    font-family: Noto Sans;
+    font-weight: 400;
 }
 
-* {
-  box-sizing: border-box;
+.NotoSan-500 {
+    font-family: Noto Sans;
+    font-weight: 500;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.Raleway-300 {
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+.Raleway-600 {
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+.dashboardslide::-webkit-scrollbar {
+    display: none;
+}
+  
+.dashboardslide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
