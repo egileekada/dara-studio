@@ -5,15 +5,15 @@ export default function Navbar(props: any){
 
     const [tab, setTab] = React.useState(false)
 
-    const el: any = document.querySelector('html'); 
+    // const el: any = document.querySelector('html'); 
 
-    React.useEffect(()=> {
-        if(tab){
-            el.style.overflow = 'hidden';
-            } else {
-            el.style.overflow = 'auto';
-        }
-    }, [tab])
+    // React.useEffect(()=> {
+    //     if(tab){
+    //         el.style.overflow = 'hidden';
+    //         } else {
+    //         el.style.overflow = 'auto';
+    //     }
+    // }, [tab])
 
     return( 
         <div className={tab ? ' w-full flex justify-between items-center fixed px-6 lg:px-12 z-40 py-3 lg:py-6 text-white top-0 ' : ' w-full flex justify-between items-center fixed px-6 lg:px-12 z-40 py-3 lg:py-6 bg-black bg-opacity-30 text-white top-0 '} > 
