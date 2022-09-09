@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <div className=' w-full h-screen relative  ' >
         <Image src="/images/HeroImage.png" layout="fill"  objectFit='cover' />
         <div className=' absolute left-6 bottom-10 text-white ' >
-          <p className='Raleway-600 text-4xl ' >Dara Studios</p>
+          <p className='Raleway-600 text-4xl ' >Shot by Dara Studios</p>
           <p className='NotoSan-300 ' >Photography</p>
         </div>
       </div>
