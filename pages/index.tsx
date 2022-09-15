@@ -78,12 +78,12 @@ I shoot for a great variety of projects, doing Portrait, Fashion, Beauty and Doc
           {/* <Image src="/images/Four.png" width={518} height={584} /> */}
         </div>
       </div>
-      <div className=' w-full flex text-white bg-[#FF5005] justify-center items-center py-6  ' >
+      {/* <div className=' w-full flex text-white bg-[#FF5005] justify-center items-center py-6  ' >
         <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Twitter</button>
         <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Linkedin</button>
         <button onClick={()=> Router.push("http://instagram.com/sbdstudios_")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Instagram</button>
         <button onClick={()=> Router.push("#")} className=' NotoSan-600 mx-3 text-sm lg:mx-6 cursor-pointer ' >Facebook</button>
-      </div>
+      </div> */}
       <div className=' w-auto py-6 dashboardslide overflow-x-auto flex  items-center' >
         <div>
           <div className=' w-40 lg:w-80 ml-3 ' >
