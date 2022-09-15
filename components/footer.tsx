@@ -12,7 +12,7 @@ export default function Footer(){
                         <img alt="footer" src="/images/mail.png" className=" w-5 h-4 "  />
                         <p className=" Raleway-300 ml-3  " >info@shotbydara.com</p>
                     </div>
-                    <div className=" flex justify-center items-center mx-3 " > 
+                    <div className=" flex justify-center items-center lg:mt-0 mt-2 mx-3 " > 
                     <img alt="footer" src="/images/call.png" className=" w-5 h-5" /> 
                         <p className=" Raleway-300 ml-3  " >+2348035583369</p>
                     </div>
