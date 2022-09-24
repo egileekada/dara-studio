@@ -13,6 +13,11 @@ export default function Portfolio(){
         }
     },[tab])
 
+    const ClickHandler =(items: any)=>{
+        sessionStorage.setItem("tab", items)
+        setTab(items)
+    }
+
     return(
         <div className=" w-full h-full flex-1 bg-[#0f0f0f] flex flex-col ">
             <Head>
@@ -23,12 +28,12 @@ export default function Portfolio(){
             <Navbar tab='portfolio' />
             <div className=" lg:pt-44 pt-20 w-full flex lg:flex-row flex-col lg:justify-center  " >
                 <div className=" NotoSan-500 flex lg:flex-col justify-center lg:justify-start items-start lg:mb-0 mb-10" >
-                    <button onClick={()=> setTab("0")} className={tab === "0" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] "}>BEAUTY</button>
-                    <button onClick={()=> setTab("1")} className={tab === "1" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] "}>LIFESTYLE</button>
-                    <button onClick={()=> setTab("2")} className={tab === "2" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base lg:flex hidden text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base lg:flex hidden text-[10px] "}>FAMILY PORTRAIT</button>
-                    <button onClick={()=> setTab("2")} className={tab === "2" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] lg:hidden " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] lg:hidden "}>FAMILY</button>
-                    <button onClick={()=> setTab("3")} className={tab === "3" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] "}>PORTRAIT</button>
-                    <button onClick={()=> setTab("4")} className={tab === "4" ? "text-white lg:mx-0 px-2 my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 my-2 lg:text-base text-[10px] "}>DOCUMENTARY</button>
+                    <button onClick={()=> ClickHandler("0")} className={tab === "0" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] "}>BEAUTY</button>
+                    <button onClick={()=> ClickHandler("1")} className={tab === "1" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] "}>LIFESTYLE</button>
+                    <button onClick={()=> ClickHandler("2")} className={tab === "2" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base lg:flex hidden text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base lg:flex hidden text-[10px] "}>FAMILY PORTRAIT</button>
+                    <button onClick={()=> ClickHandler("2")} className={tab === "2" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] lg:hidden " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] lg:hidden "}>FAMILY</button>
+                    <button onClick={()=> ClickHandler("3")} className={tab === "3" ? "text-white lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 lg:border-r-0 border-r my-2 lg:text-base text-[10px] "}>PORTRAIT</button>
+                    <button onClick={()=> ClickHandler("4")} className={tab === "4" ? "text-white lg:mx-0 px-2 my-2 lg:text-base text-[10px] " : "text-[#A1A1A1] lg:mx-0 px-2 my-2 lg:text-base text-[10px] "}>DOCUMENTARY</button>
                 </div>
                 {tab === "0" && ( 
                     <div className=" flex flex-col lg:ml-20 mb-20 " >
