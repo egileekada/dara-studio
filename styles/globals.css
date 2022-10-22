@@ -1,12 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url("../public/fonts/Poppins-ExtraBold.ttf")
+  } 
+  
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url("../public/fonts/Poppins-Bold.ttf")
+  } 
+  
+  @font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url("../public/fonts/Poppins-SemiBold.ttf")
+  }  
+  
+  @font-face {
+    font-family: 'Poppins-Medium';
+    src: url("../public/fonts/Poppins-Medium.ttf")
+  } 
+  
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url("../public/fonts/Poppins-Regular.ttf")
+  } 
+  
 
 @import url('https://fonts.googleapis.com/css?family=Noto+San&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-.NotoSan-300 {
+/* .NotoSan-300 {
     font-family: Noto Sans;
     font-weight: 300;
 }
@@ -34,7 +59,7 @@
 .Raleway-600 {
     font-family: Raleway;
     font-weight: 600;
-}
+} */
 
 .dashboardslide::-webkit-scrollbar {
     display: none;
@@ -43,4 +68,51 @@
 .dashboardslide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+#SideText {
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+}
+
+
+#img {
+    max-width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /* margin-bottom: 10px; */
+    break-inside: avoid; 
+}
+
+figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    padding-top: 20px;
+}
+
+figure a {
+    color: black;
+    text-decoration: none;
+}
+
+figcaption {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(255,255,255,.5);
+    padding: .2em .5em;
+    justify-self: start;
+}
+
+.container {
+    column-count: 4;
+    width: 100%; 
+  }
+.containermobile {
+    column-count: 2;
+    width: 100%; 
 }

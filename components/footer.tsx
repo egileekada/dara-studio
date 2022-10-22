@@ -4,29 +4,30 @@ import Router from "next/router";
 
 export default function Footer(){
     return(
-        <div className=" w-full py-7 flex flex-col px-6 text-white " >
-            <div className=" w-full flex justify-between lg:justify-center mx-auto items-center " >  
-                <img alt="footer" src="/images/mobile.png" className=" w-4 lg:hidden "  />
-                <div className="  flex items-center lg:flex-row flex-col " >
-                    <div className=" flex justify-center items-center mx-3 " > 
-                        <img alt="footer" src="/images/mail.png" className=" w-5 h-4 "  />
-                        <p className=" Raleway-300 ml-3  " >info@shotbydara.com</p>
-                    </div>
-                    <div className=" flex justify-center items-center lg:mt-0 mt-2 mx-3 " > 
-                    <img alt="footer" src="/images/call.png" className=" w-5 h-5" /> 
-                        <p className=" Raleway-300 ml-3  " >+2348035583369</p>
-                    </div>
+        <div className=" w-full py-7 pt-14 flex flex-col px-6 lg:px-12 bg-[#232323] text-white " > 
+            <div className=" w-full flex flex-col lg:flex-row " >
+                <div className="w-full flex flex-col " >
+                    <p className=' font-Poppins-Bold text-[32px] lg:text-left text-center lg:text-[40px] leading-snug ' >SBD <span className=" font-Poppins-Regular" >STUDIOS</span></p>
+                    <p className='  lg:w-[522px] xl:w-[522px] lg:text-left text-center font-Poppins-Regular mt-4 ' >The world without photography will be
+                        meaningless to us if there is no light and color,
+                        which opens up our minds and expresses passion.</p>
                 </div>
-                <div className=" flex items-center lg:flex-row flex-col " > 
-                    {/* <button onClick={()=> Router.push("#")} className="lg:mx-3 my-3" ><img alt="footer" src="/images/Snapchat.png" className=" w-5 h-5 "  /></button> */}
-                    <button onClick={()=> Router.push("http://instagram.com/sbdstudios_")} className="lg:mx-3 my-3" ><img alt="footer" src="/images/Instagram.png" className=" w-5 h-5 "  /></button>
-                    {/* <button onClick={()=> Router.push("#")} className="lg:mx-3 my-3" ><img alt="footer" src="/images/Twitter.png" className=" w-5 h-5 "  /></button> */}
+                <div className="w-full flex flex-col lg:items-end lg:mt-0 mt-12 " >
+                    <p className=' font-Poppins-Bold text-[32px] lg:text-right text-center lg:text-[40px] leading-snug ' >Contacts</p>
+                    <div className=" w-full lg:w-96 font-Poppins-Regular mt-4 flex lg:flex-row flex-col items-center " >
+                        <p>Phone:</p>  
+                            <p className="lg:ml-auto ">+2349077601790</p> 
+                    </div>
+                    <div className=" w-full lg:w-96 font-Poppins-Regular mt-6 lg:mt-1 flex lg:flex-row flex-col items-center " >
+                        <p className="  " >Email:</p> 
+                            <p className=" lg:ml-auto " >support@sbdstudios.com</p> 
+                    </div> 
                 </div>
-            </div> 
-            <img alt="footer" src="/images/sbd.png" className=" w-20 ml-20 lg:flex hidden "  />
-            <div className=" w-full flex flex-col lg:mt-0 mt-10 items-center  " >
-                <button onClick={()=> Router.push("#")} className="NotoSan-400 text-sm " >Developed by Icoweb</button>
-                <p className="NotoSan-400 text-sm mt-1 " >Dara Studio © 2022 All Right Reserved</p>
+            </div>
+            {/* <img alt="footer" src="/images/sbd.png" className=" w-20 ml-20 lg:flex hidden "  /> */}
+            <div className=" w-full flex flex-col lg:mt-10 mt-10 items-center  " >
+                <p className=" font-Poppins-SemiBold text-sm lg:text-[20px] " >Copyright 2022 SBD STUDIOS. All Rights Reserved.</p>
+                <button onClick={()=> Router.push("")} className="font-Poppins-Bold mt-1 text-sm lg:text-base " >Developed by ICOWEB AGENCY</button>
             </div>
         </div>
     )
