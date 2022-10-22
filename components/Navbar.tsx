@@ -22,13 +22,13 @@ export default function Navbar(props: any){
                 {/* <img alt='Navbar' src="/images/sbd.png" className=" w-10 lg:w-20 "  /> */}
             </button>
             {!tab && 
-                <button onClick={()=> setTab(true)} > 
+                <button onClick={()=> setTab(true)} className='w-12 flex justify-center'  > 
                     <img alt='Navbar' src="/images/roll.png" className=" w-12 lg:hidden "  />
                 </button>
             }
             {tab && 
-                <button className=' relative z-50' onClick={()=> setTab(false)} > 
-                    <img alt='Navbar' src="/images/close.png" className=" w-12 mt-2 lg:hidden "  />
+                <button className=' relative z-50 w-12 flex justify-center' onClick={()=> setTab(false)} > 
+                    <img alt='Navbar' src="/images/close.png" className=" w-8 mt-1 lg:hidden "  />
                 </button>
             }
             <div className=' hidden lg:flex ' > 
