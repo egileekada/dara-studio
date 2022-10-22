@@ -19,15 +19,15 @@ export default function SliderComponent(props: any) {
 
     return (
         <div className=' w-full h-screen relative  '  >
-            <div className=' absolute z-10 inset-0 bottom-32 lg:bottom-36  ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>
+            <div className=' absolute z-10 inset-0 lg:bottom-36  ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>
             {next === 0 && ( 
-                <img src='/slide.png' className=' w-full h-full pb-32 lg:pb-36  object-cover ' /> 
+                <img src='/slide.png' className=' w-full h-full lg:pb-36  object-cover ' /> 
             )}
             {next === 1 && ( 
-                <img src='/slide1.png' className=' w-full h-full pb-32 lg:pb-36  object-cover ' /> 
+                <img src='/slide1.png' className=' w-full h-full lg:pb-36  object-cover ' /> 
             )}
             {next === 2 && ( 
-                <img src='/slide2.png' className=' w-full h-full pb-32 lg:pb-36  object-cover ' /> 
+                <img src='/slide2.png' className=' w-full h-full lg:pb-36  object-cover ' /> 
             )}
             <div className=' absolute lg:px-0 px-6 lg:pl-20 bottom-48 z-30 text-white ' >
                 <div className=' flex items-center ' > 
