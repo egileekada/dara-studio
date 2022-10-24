@@ -20,8 +20,8 @@ export default function About(){
                     </div> 
                     <div className=' w-full flex  text-white h-full flex-col ' >
                        <div className=' lg:px-24 xl:px-24 lg:mt-0 mt-10 ' > 
-                            <p className=' font-Poppins-ExtraBold lg:text-5xl text-2xl lg:text-left text-center leading-snug ' >My name is Idara Adiakpan,</p>
-                            <p className=' font-Poppins-ExtraBold lg:text-5xl text-2xl lg:text-left text-center lg:mt-5 text-[#C48F56] '>I’m a Photographer.</p> 
+                            <p className=' font-Poppins-ExtraBold lg:text-4xl text-2xl lg:text-left text-center leading-snug ' >My name is Idara Adiakpan,</p>
+                            <p className=' font-Poppins-ExtraBold lg:text-4xl text-2xl lg:text-left text-center lg:mt-5 text-[#C48F56] '>I’m a Photographer.</p> 
                             <p className=' font-Poppins-Regular mt-4 lg:text-left text-center' >The world without photography will be meaningless to us if there is no light and color, which opens up our minds and expresses passion.</p>
                             <p className=' font-Poppins-Regular mt-4 lg:text-left text-center'>I hail from Akwa Ibom State, Nigeria. My style is a combination between photojournalism, fine-art photography, documentary photography, with a touch of fashion and creative lighting. My photos are inspired by light, color, techniques from black & white processing, vintage photos, creative perspective,  and of course, most importantly, the personalities of the people i photograph!</p>
                        </div>
@@ -30,7 +30,7 @@ export default function About(){
                 <div className="  mt-10 lg:mt-24 bg-[#121212]   w-full flex lg:flex-row flex-col items-center  " > 
                     <div className=' w-full flex  text-white h-full flex-col ' >
                        <div className=' lg:px-24 xl:px-24 ' > 
-                            <p className=' font-Poppins-Bold text-[40px] leading-snug lg:text-left text-center' >My Skills</p>
+                            <p className=' font-Poppins-Bold text-[35px] leading-snug lg:text-left text-center' >My Skills</p>
                             <div className=' w-full grid-col-1 grid lg:grid-cols-2 gap-6 ' >
                                 <div className=' w-full ' >
                                     <p className=' font-Poppins-SemiBold mt-4 text-xl lg:text-left text-center' >PORTRAITS</p>
@@ -63,38 +63,38 @@ export default function About(){
                     </div> 
                 </div> 
                 <div className=' w-full mt-14 text-white ' >
-                    <p className=' font-Poppins-Bold text-[40px] text-center leading-snug ' >Why Choose Me (<span className=' text-[#C48F56] ' >Us</span>)?</p>
+                    <p className=' font-Poppins-Bold text-[35px] text-center leading-snug ' >Why Choose Me (<span className=' text-[#C48F56] ' >Us</span>)?</p>
                     <div className=' w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 ' >
-                        <div className=' w-full ' >
+                        <div className=' w-full flex flex-col items-start ' >
                             <p className=' font-Poppins-SemiBold mt-4 text-xl lg:text-left text-center ' >LIGHT COMPOSURE</p>
-                            <p className=' font-Poppins-Regular mt-2 text-sm lg:text-left text-center ' >With our state of the art lighting equipment, you 
+                            <p className=' font-Poppins-Regular lg:w-[370px] mt-2 text-sm lg:text-left text-center ' >With our state of the art lighting equipment, you 
                                 can be sure to have stunning images captured in
                                 the idea lighting environment.</p>
                         </div>
-                        <div className=' w-full ' >
+                        <div className=' w-full flex flex-col items-center  ' >
                             <p className=' font-Poppins-SemiBold mt-4 text-xl text-center ' >PROFESSIONAL SKILLS</p>
-                            <p className=' font-Poppins-Regular mt-2 text-sm text-center ' >I have been able to capture real-life events
+                            <p className=' font-Poppins-Regular lg:w-[370px] mt-2 text-sm text-center ' >I have been able to capture real-life events
                                 and milestones in a very artistic manner.</p>
                         </div>
-                        <div className=' w-full ' >
+                        <div className=' w-full flex flex-col items-center lg:items-end' >
                             <p className=' font-Poppins-SemiBold mt-4 text-xl text-center lg:text-right ' >PERFECT EQUIPMENT</p>
-                            <p className=' font-Poppins-Regular mt-2 text-sm text-center lg:text-right ' >The world without photography will be
+                            <p className=' font-Poppins-Regular lg:w-[370px] mt-2 text-sm text-center lg:text-right ' >The world without photography will be
                                 meaningless to us if there is light.</p>
                         </div>
-                        <div className=' w-full ' >
+                        <div className=' w-full flex flex-col items-center lg:items-start' >
                             <p className=' font-Poppins-SemiBold mt-4 text-xl  lg:text-left text-center ' >ULTRA HD</p>
-                            <p className=' font-Poppins-Regular mt-2 text-sm lg:text-left text-center ' >Our captures go beyond a smiling face.
+                            <p className=' font-Poppins-Regular lg:w-[370px] mt-2 text-sm lg:text-left text-center ' >Our captures go beyond a smiling face.
                                 It is also about your personality.</p>
                         </div>
-                        <div className=' w-full ' >
+                        <div className=' w-full flex flex-col items-center lg:items-center ' >
                             <p className=' font-Poppins-SemiBold mt-4 text-xl text-center ' >UNIC VISION</p>
-                            <p className=' font-Poppins-Regular mt-2 text-sm text-center ' >Your brand story is sure to be comunicated
+                            <p className=' font-Poppins-Regular lg:w-[370px] mt-2 text-sm text-center ' >Your brand story is sure to be comunicated
                                 to your customers boldly, bringing art and
                                 commerce together.</p>
                         </div>
-                        <div className=' w-full ' >
+                        <div className=' w-full flex flex-col items-center lg:items-end' >
                             <p className=' font-Poppins-SemiBold mt-4 text-xl text-center lg:text-right ' >FOCUSING KNOWLEDGES</p>
-                            <p className=' font-Poppins-Regular mt-2 text-sm text-center lg:text-right ' >I love my work! I want to believe you would like to 
+                            <p className=' font-Poppins-Regular lg:w-[370px] mt-2 text-sm text-center lg:text-right ' >I love my work! I want to believe you would like to 
                                 have a feel of what it takes to work with a dark, 
                                 bold, and creative female photographer like me.</p>
                         </div>
