@@ -35,13 +35,13 @@ export default function SliderComponent(props: any) {
                     <p className=' font-Poppins-Regular text-sm ml-4 ' >Portraits</p>
                 </div>
                 {next === 0 && ( 
-                    <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-5xl my-2 leading-snug lg:w-[428px] ' >The difference is so much more.</p>
+                    <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-4xl my-2 lg:w-[428px] ' >The difference is so much more.</p>
                 )}
                 {next === 1 && ( 
-                    <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-5xl my-2 leading-snug lg:w-[428px] ' >The Power of a woman</p>
+                    <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-4xl my-2 lg:w-[428px] ' >The Power of a woman</p>
                 )}
                 {next === 2 && ( 
-                    <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-5xl my-2 leading-snug lg:w-[432px] ' >Through the eyes of the innocent</p>
+                    <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-4xl my-2 lg:w-[432px] ' >Through the eyes of the innocent</p>
                 )}
                 <p className=' font-Poppins-Regular text-sm hidden lg:flex items-center ' >READ MORE <span className='text-xl ml-1' >{">"}</span></p>
             </div>
