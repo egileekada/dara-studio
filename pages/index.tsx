@@ -26,13 +26,13 @@ export default function Index() {
                             <div style={{borderRadius: "999px", width: "5px", height: "5px"}} className='mx-auto  bg-[#C48F56] ' />
                         </div>
                         <div id='SideText' className=' h-full flex justify-center items-center px-4 text-white w-full ' >
-                            <img src="/images/Instagram.png" className=' w-3 mt-8 '  /><Link href="" >instagram</Link>
+                            <img src="/images/Instagram.png" className=' w-3 mt-8 '  /><Link href="http://instagram.com/sbdstudios_" >instagram</Link>
                         </div>
                         <div className=' w-full ' > 
                             <div style={{borderRadius: "999px", width: "5px", height: "5px"}} className='mx-auto  bg-[#C48F56] ' />
                         </div>
                         <div id='SideText' className=' h-full flex justify-center items-center px-4 text-white w-full ' >
-                            <img src="/images/Facebook.png" className=' w-3 mt-8 '  /><Link href="" >facebook</Link>
+                            <img src="/images/Facebook.png" className=' w-3 mt-8 '  /><Link href="https://web.facebook.com/SBDStudios" >facebook</Link>
                         </div>
                     </div>
                     <SliderComponent next={setNext} />
