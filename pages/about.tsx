@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Image from 'next/image'
 import Footer from '../components/footer';
-import SocialMedia from '../components/SocialMedia';;
+import SocialMedia from '../components/SocialMedia';
 
 export default function About(){
     return(

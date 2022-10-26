@@ -16,7 +16,7 @@ export default function Navbar(props: any){
     // }, [tab])
 
     return( 
-        <div className={tab ? ' w-full flex justify-between items-center px-6 lg:px-[60px] z-40 py-3 lg:py-6 text-white top-0 ' : ' w-full flex justify-between items-center  px-6 lg:px-[60px] z-40 py-3 lg:py-6 bg-[#0F0F0F] bg-opacity-30 text-white top-0 '} > 
+        <div className={tab ? ' w-full flex justify-between items-center px-6 lg:px-[60px] z-40 py-4 lg:py-6 text-white top-0 ' : ' w-full flex justify-between items-center  px-6 lg:px-[60px] z-40 py-4 lg:py-6 bg-[#0F0F0F] bg-opacity-30 text-white top-0 '} > 
             <button  className=' relative z-50' onClick={()=> Router.push("/")} > 
                 <p className=' font-Poppins-Bold text-[32px] leading-snug ' >SBD <span className=" font-Poppins-Regular" >STUDIOS</span></p>
                 {/* <img alt='Navbar' src="/images/sbd.png" className=" w-10 lg:w-20 "  /> */}

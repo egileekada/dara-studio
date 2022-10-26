@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Footer from '../components/footer'
 import Navbar from '../components/Navbar'
+import SocialMedia from '../components/SocialMedia';
 
 export default function Gallery() {
     return (
@@ -208,6 +209,7 @@ export default function Gallery() {
                     </figure>
                 </div>
             </div>
+            <SocialMedia />
             <Footer />
         </div>
     )

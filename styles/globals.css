@@ -70,6 +70,11 @@
     scrollbar-width: none;
 }
 
+.SideText {
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+}
+
 #SideText {
     writing-mode: sideways-lr;
     text-orientation: mixed;

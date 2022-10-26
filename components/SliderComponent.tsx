@@ -55,6 +55,9 @@ export default function SliderComponent(props: any) {
                     <div className=' h-[1px] bg-white w-6 mx-2 ' />
                 )}
                 <p className={next === 2 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' }>03</p>
+                {next === 2 && (
+                    <div className=' h-[1px] bg-white w-6 mx-2 ' />
+                )}
             </div>
         </div>
     )
