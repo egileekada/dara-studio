@@ -18,7 +18,7 @@ export default function SliderComponent(props: any) {
     },) 
 
     return (
-        <div className=' w-full h-full relative  '  >
+        <div className=' w-full h-full relative  overflow-y-hidden '  >
             <div className=' absolute z-10 inset-0  ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>
             {next === 0 && ( 
                 <img src='/slide.png' className=' w-full h-full  object-cover ' /> 
