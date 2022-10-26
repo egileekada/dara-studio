@@ -64,7 +64,7 @@ export default function Index() {
                         </button>
                     </div>
                 </div>
-                <div className=' w-full font-Poppins-Regular  pt-2 bg-[#0F0F0F] absolute z-40 bottom-0 lg:px-[60px] pb-3 ' >
+                <div className=' w-full font-Poppins-Regular  pt-2 bg-[#0F0F0F] fixed z-40 bottom-0 lg:px-[60px] pb-3 ' >
                     {!tab && (
                         <div className=' w-full hidden lg:flex justify-end items-center ' >
                             <p className={next === 0 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' } >01</p>
