@@ -29,7 +29,7 @@ export default function SliderComponent(props: any) {
             {next === 2 && ( 
                 <img src='/slide2.png' className=' w-full h-full  object-cover ' /> 
             )}
-            <div className=' absolute lg:px-0 px-6 lg:pl-20 bottom-36 z-30 text-white ' >
+            <div className=' absolute lg:px-0 px-6 lg:pl-20 lg:bottom-16 bottom-36 z-30 text-white ' >
                 <div className=' flex items-center ' > 
                     <div className=' h-[1.2px] bg-[#C48F56] w-6 ' />
                     <p className=' font-Poppins-Regular text-sm ml-4 ' >Portraits</p>
