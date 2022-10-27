@@ -71,15 +71,14 @@
 }
 
 .SideText {
-    writing-mode: sideways-lr;
-    text-orientation: mixed;
-}
+    /* writing-mode: vertical-lr; */
+    text-orientation: sideways;
+} 
 
 #SideText {
-    writing-mode: sideways-lr;
-    text-orientation: mixed;
+    /* writing-mode: vertical-lr; */
+    text-orientation: sideways;
 }
-
 
 #img {
     max-width: 100%;

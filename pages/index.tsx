@@ -20,20 +20,20 @@ export default function Index() {
                 <Navbar tab='home' />
                 <div className=' flex w-screen lg:w-full overflow-y-hidden h-screen ' >
                     <div className=' w-[60px] hidden lg:flex flex-col ' >
-                        <div id='' className='SideText h-full flex justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
-                            <img src="/images/Twitter.png" className=' -rotate-90 w-3 mt-8 '  /><Link href="" > twitter</Link>
+                        <div id='SideText' className=' h-full flex -rotate-90 justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
+                            <img src="/images/Twitter.png" className=' w-3 mr-3 '  /><Link href="" > twitter</Link>
                         </div>
                         <div className=' w-full ' > 
                             <div style={{borderRadius: "999px", width: "5px", height: "5px"}} className='mx-auto  bg-[#C48F56] ' />
                         </div>
-                        <div id='' className='SideText h-full flex justify-center items-center px-4 text-white w-full ' >
-                            <img src="/images/Instagram.png" className=' w-3 mt-8 '  /><Link href="http://instagram.com/sbdstudios_" >instagram</Link>
+                        <div id='' className=' -rotate-90  h-full flex justify-center items-center px-4 text-white w-full ' >
+                            <img src="/images/Instagram.png" className=' w-3 mr-3  '  /><Link href="http://instagram.com/sbdstudios_" >instagram</Link>
                         </div>
                         <div className=' w-full ' > 
                             <div style={{borderRadius: "999px", width: "5px", height: "5px"}} className='mx-auto  bg-[#C48F56] ' />
                         </div>
-                        <div id='' className='SideText h-full flex justify-center items-center px-4 text-white w-full ' >
-                            <img src="/images/Facebook.png" className=' w-3 mt-8 '  /><Link href="https://web.facebook.com/SBDStudios" >facebook</Link>
+                        <div id='' className=' -rotate-90  h-full flex justify-center items-center px-4 text-white w-full ' >
+                            <img src="/images/Facebook.png" className=' w-3 mr-3 rotate-90  '  /><Link href="https://web.facebook.com/SBDStudios" >facebook</Link>
                         </div>
                     </div>
                     {!tab && (
@@ -46,10 +46,10 @@ export default function Index() {
                     <div className=' w-[60px] hidden lg:flex flex-col ' >
                         
                         {!tab ? 
-                            <button onClick={()=> setTab(true)} id='' className='SideText h-full flex justify-center items-center px-4 relative text-white w-full font-Poppins-Medium ' >
+                            <button onClick={()=> setTab(true)} id='' className=' h-full -rotate-90  flex justify-center items-center px-4 relative text-white w-full font-Poppins-Medium ' >
                                 CATEGORIES
                             </button>: 
-                            <button onClick={()=> setTab(false)} id='' className='SideText h-full flex justify-center items-center pl-1 text-white w-full ' >
+                            <button onClick={()=> setTab(false)} id='' className='-rotate-90  h-full flex justify-center items-center pl-1 text-white w-full ' >
                                 <div  onClick={()=> setTab(false)} className=' py-4 w-full flex items-center rounded bg-[#1D1D1D] ' >
                                     <img src="/images/close.png" className=' w-3 mt-8 '  />CLOSE
                                 </div>
@@ -59,8 +59,8 @@ export default function Index() {
                         <div className=' w-full ' > 
                             <div style={{borderRadius: "999px", width: "5px", height: "5px"}} className='mx-auto  bg-[#C48F56] ' />
                         </div>
-                        <button id='' className='SideText h-full flex justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
-                            <p> About Us</p>
+                        <button id='' className='-rotate-90  h-full flex justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
+                            <Link href="/about" > About_Us</Link>
                         </button>
                     </div>
                 </div>
