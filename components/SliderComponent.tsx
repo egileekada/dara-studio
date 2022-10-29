@@ -4,31 +4,79 @@ export default function SliderComponent(props: any) {
     
     const [next, setNext] = React.useState(0)
 
+    const hasWindow = typeof window !== 'undefined';
+    const ref: any = React.useRef(null); 
+  
+    function getWindowDimensions() {
+      const width = hasWindow ? window.innerWidth : null;
+      const height = hasWindow ? window.innerHeight : null;
+      return {
+        width,
+        height,
+      };
+    }
+  
+
+
+    const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
+  
+    React.useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    },);
+  
+    console.log(windowDimensions)
+
+    let width: any = windowDimensions.width
+
+    let back = width*3
+
     React.useEffect(() => {  
         const t1 = setTimeout(() => {  
             clearTimeout(t1);
             if(next > 1){ 
                 setNext(0)
                 props.next(0)
+                ref.current.scrollLeft +=  -back
             } else { 
                 setNext(next+1)
                 props.next(next+1)
+                ref.current.scrollLeft +=  windowDimensions.width
             }
         }, 6000); 
     },) 
 
+    const ClickHandler =(item: any)=>{
+        if(next > item){
+            setNext(0)
+            ref.current.scrollLeft +=  windowDimensions.width
+        }
+    }
+
     return (
-        <div className=' w-full h-full relative  overflow-y-hidden '  >
-            <div className=' absolute z-10 inset-0  ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>
-            {next === 0 && ( 
-                <img src='/slide.png' className=' w-full h-full  object-cover ' /> 
-            )}
-            {next === 1 && ( 
-                <img src='/slide1.png' className=' w-full h-full  object-cover ' /> 
-            )}
-            {next === 2 && ( 
-                <img src='/slide2.png' className=' w-full h-full  object-cover ' /> 
-            )}
+        <div className="w-full overflow-x-auto flex scrollBody "  ref={ref}  >
+            <div className=' absolute z-10 inset-0  ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/> 
+            <div className=' flex w-auto ' > 
+                <div style={{ width: windowDimensions.width+"px"}} className="relative h-full"    > 
+                    <img src='/slide.png'  className=' w-full h-full object-cover ' /> 
+                </div> 
+                <div style={{ width: windowDimensions.width+"px"}} className="relative h-full"    > 
+                    <img src='/slide1.png' className=' w-full h-full  object-cover ' />  
+                </div> 
+                <div style={{ width: windowDimensions.width+"px"}} className="relative h-full"    > 
+                    <img src='/slide2.png' className=' w-full h-full  object-cover ' />  
+                </div> 
+                {/* <div style={{ width: windowDimensions.width+""}}  className="relative h-full"  > 
+                    <img src='/slide.png'  className=' w-full h-full object-cover ' /> 
+                </div>  */}
+                {/* <div style={{ width: windowDimensions.width+"", height: windowDimensions.height+""}}   > 
+                    <img src='/slide.png' className=' w-full h-full object-cover ' /> 
+                </div>  */}
+            </div>
             <div className=' absolute lg:px-0 px-6 lg:pl-20 lg:bottom-16 bottom-36 z-30 text-white ' >
                 <div className=' flex items-center ' > 
                     <div className=' h-[1.2px] bg-[#C48F56] w-6 ' />
@@ -62,3 +110,26 @@ export default function SliderComponent(props: any) {
         </div>
     )
 } 
+
+// function getWindowDimensions() {
+//     const { innerWidth: width, innerHeight: height } = window;
+//     return {
+//       width,
+//       height
+//     };
+//   }
+  
+//   export default function useWindowDimensions() {
+//     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+//     useEffect(() => {
+//       function handleResize() {
+//         setWindowDimensions(getWindowDimensions());
+//       }
+  
+//       window.addEventListener('resize', handleResize);
+//       return () => window.removeEventListener('resize', handleResize);
+//     }, []);
+  
+//     return windowDimensions;
+//   }
