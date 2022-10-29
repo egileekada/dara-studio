@@ -4,11 +4,12 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import SliderComponent from '../components/SliderComponent'
 import Categories from '../components/Categories'
+import AboutUs from '../components/AboutUs'
 
 export default function Index() {
 
     const [next, setNext] = React.useState(0) 
-    const [tab, setTab] = React.useState(false) 
+    const [tab, setTab] = React.useState(0) 
 
     return (
             <div className=" w-full h-screen  overflow-hidden font-Poppins-Medium bg-[#0F0F0F] flex flex-col ">
@@ -19,7 +20,7 @@ export default function Index() {
                 </Head> 
                 <Navbar tab='home' />
                 <div className=' flex w-screen lg:w-full overflow-y-hidden h-screen ' >
-                    <div className=' w-[60px] hidden lg:flex flex-col ' >
+                    <div className=' w-[60px] relative z-50 hidden lg:flex flex-col ' >
                         <div id='SideText' className=' h-full flex -rotate-90 justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
                             <img src="/images/Twitter.png" className=' w-3 mr-3 '  /><Link href="" > twitter</Link>
                         </div>
@@ -36,36 +37,52 @@ export default function Index() {
                             <img src="/images/Facebook.png" className=' w-3 mr-3 rotate-90  '  /><Link href="https://web.facebook.com/SBDStudios" >facebook</Link>
                         </div>
                     </div>
-                    {!tab && (
+                    {tab === 0 && (
                         <SliderComponent next={setNext} />
                     )}
-                    {tab && (
+                    {tab === 1 && (
                         <Categories />
+                    )} 
+
+                    {tab === 2 && (
+                        <AboutUs />
                     )}
-                    
-                    <div className=' w-[60px] hidden lg:flex flex-col ' >
+
+                    <div className=' w-[60px] relative z-50 hidden lg:flex flex-col ' >
                         
-                        {!tab ? 
-                            <button onClick={()=> setTab(true)} id='' className=' h-full -rotate-90  flex justify-center items-center px-4 relative text-white w-full font-Poppins-Medium ' >
+                        {tab !== 1 &&  
+                            <button onClick={()=> setTab(1)} id='' className=' h-full -rotate-90  flex justify-center items-center px-4 relative text-white w-full font-Poppins-Medium ' >
                                 CATEGORIES
-                            </button>: 
+                            </button>
+                        }
+                        {tab === 1 && ( 
                             <div  id='' className='-rotate-90  h-full flex justify-center items-center pl-1 text-white w-full ' >
-                                <button  onClick={()=> setTab(false)} className=' py-3 px-2 w-full text-sm flex  items-center rounded bg-[#1D1D1D] ' >
+                                <button  onClick={()=> setTab(0)} className=' py-3 px-2 w-full text-sm flex  items-center rounded bg-[#1D1D1D] ' >
                                     <img src="/images/close.png" className=' w-3 mr-3 '  />CLOSE
                                 </button>
                             </div> 
-                        }
+                        )}
 
                         <div className=' w-full ' > 
                             <div style={{borderRadius: "999px", width: "5px", height: "5px"}} className='mx-auto  bg-[#C48F56] ' />
-                        </div>
-                        <button id='' className='-rotate-90  h-full flex justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
-                            <Link href="/about" > About_Us</Link>
-                        </button>
+                        </div> 
+
+                        {tab !== 2  &&  
+                            <button onClick={()=> setTab(2)} className='-rotate-90  h-full flex justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
+                                About_Us
+                            </button>
+                        }
+                        {tab === 2 && ( 
+                            <div  id='' className='-rotate-90  h-full flex justify-center items-center pl-1 text-white w-full ' >
+                                <button  onClick={()=> setTab(0)} className=' py-3 px-2 w-full text-sm flex  items-center rounded bg-[#1D1D1D] ' >
+                                    <img src="/images/close.png" className=' w-3 mr-3 '  />CLOSE
+                                </button>
+                            </div> 
+                        )}
                     </div>
                 </div>
                 <div className=' w-full font-Poppins-Regular  pt-2 bg-[#0F0F0F] fixed z-40 bottom-0 lg:px-[60px] pb-3 ' >
-                    {!tab && (
+                    {tab === 0 && (
                         <div className=' w-full hidden lg:flex justify-end items-center ' >
                             <p className={next === 0 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' } >01</p>
                             {next === 0 && (
@@ -83,22 +100,23 @@ export default function Index() {
                     )}
 
                     <div className=' w-full h-[60px] flex lg:hidden items-center ' > 
-                        {!tab ? 
-                            <button onClick={()=> setTab(true)} className=' text-[#C48F56] w-32 relative z-20 flex justify-center mx-auto font-Poppins-Medium ' >
+                        {tab !== 1 && 
+                            <button onClick={()=> setTab(1)} className=' text-[#C48F56] w-32 relative z-20 flex justify-center mx-auto font-Poppins-Medium ' >
                                 <p> CATEGORIES</p>
-                            </button> 
-                            :
-                            <div onClick={()=> setTab(false)} id='' className='h-full flex relative z-20 mx-auto justify-center items-center text-white w-28 ' >
+                            </button>  
+                        } 
+                        {tab === 1 && 
+                            <div onClick={()=> setTab(0)} id='' className='h-full flex relative z-20 mx-auto justify-center items-center text-white w-28 ' >
                                 <button className=' h-12 px-3 w-full flex items-center rounded bg-[#1D1D1D] ' >
                                     <img src="/images/close.png" className=' w-5 mt-1 mr-2 '  /><Link href="" >CLOSE</Link>
                                 </button>
                             </div>
-                        } 
+                        }
                         <div className=' w-full absolute h-full flex items-center justify-center  ' > 
                             <div style={{ borderRadius: "9999px" }} className=" bg-[#C48F56] w-[6px] h-[6px] rounded-full " /> 
                         </div>
                         <div className=' text-white w-32 mx-auto flex relative z-20 justify-center font-Poppins-Medium  ' > 
-                            <Link href="" >ABOUT</Link> 
+                            <button onClick={()=> setTab(2)} >ABOUT</button>               
                         </div> 
                     </div>
                 </div>

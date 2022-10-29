@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react'
 
 export default function SliderComponent(props: any) {
@@ -129,7 +129,7 @@ export default function SliderComponent(props: any) {
                 {next === 2 && ( 
                     <p className=' font-Poppins-Bold lg:font-Poppins-ExtraBold text-2xl lg:text-4xl my-2 lg:w-[432px] ' >Through the eyes of the innocent</p>
                 )}
-                <Link href="/about" className=' font-Poppins-Regular text-sm hidden lg:flex items-center ' >READ MORE <span className='text-xl ml-1' >{">"}</span></Link>
+                <p onClick={()=> Router.push("/about")} className=' font-Poppins-Regular text-sm hidden cursor-pointer lg:flex items-center ' >READ MORE <span className='text-xl ml-1' >{">"}</span></p>
             </div>
             <div className=' w-full absolute z-30 bottom-28 lg:hidden flex justify-center items-center ' >
                 <p  onClick={()=> setNext(0) } className={next === 0 ? ' text-[#C48F56] mx-2 cursor-pointer ' : ' text-white cursor-pointer mx-2 ' } >01</p>
