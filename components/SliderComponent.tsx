@@ -21,16 +21,16 @@ export default function SliderComponent(props: any) {
     const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
   
     React.useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-  
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    },);
-  
-    console.log(windowDimensions)
-
+        // if (hasWindow) {
+          function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+          }
+    
+          window.addEventListener('resize', handleResize);
+          return () => window.removeEventListener('resize', handleResize);
+        // }
+      }, [hasWindow]);
+    
     let width: any = windowDimensions.width 
 
     React.useEffect(() => {  
@@ -53,23 +53,23 @@ export default function SliderComponent(props: any) {
             setNext(0)
             ref.current.scrollLeft +=  -width*3
             return
-        }else if(next > item){
+        }else if(next < item){
             setNext(item)
             ref.current.scrollLeft +=  windowDimensions.width
         } 
     }
-
+ 
     return (
         <div className="w-full overflow-x-auto flex scrollBody "  ref={ref}  >
             <div className=' absolute z-10 inset-0  ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/> 
             <div className=' flex w-auto ' > 
-                <div style={{ width: windowDimensions.width+"px"}} className="relative h-full"    > 
+                <div style={{ width: width+"px"}} className="relative h-full"    > 
                     <img src='/slide.png'  className=' w-full h-full object-cover ' /> 
                 </div> 
-                <div style={{ width: windowDimensions.width+"px"}} className="relative h-full"    > 
+                <div style={{ width: width+"px"}} className="relative h-full"    > 
                     <img src='/slide1.png' className=' w-full h-full  object-cover ' />  
                 </div> 
-                <div style={{ width: windowDimensions.width+"px"}} className="relative h-full"    > 
+                <div style={{ width: width+"px"}} className="relative h-full"    > 
                     <img src='/slide2.png' className=' w-full h-full  object-cover ' />  
                 </div> 
                 {/* <div style={{ width: windowDimensions.width+""}}  className="relative h-full"  > 
