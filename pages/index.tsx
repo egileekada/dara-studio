@@ -38,7 +38,7 @@ export default function Index() {
                         </div>
                     </div>
                     {tab === 0 && (
-                        <SliderComponent next={setNext} />
+                        <SliderComponent next={setNext} tab={next} />
                     )}
                     {tab === 1 && (
                         <Categories />
@@ -84,15 +84,15 @@ export default function Index() {
                 <div className=' w-full font-Poppins-Regular  pt-2 bg-[#0F0F0F] fixed z-40 bottom-0 lg:px-[60px] pb-3 ' >
                     {tab === 0 && (
                         <div className=' w-full hidden lg:flex justify-end items-center ' >
-                            <p className={next === 0 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' } >01</p>
+                            <p onClick={()=> setNext(0)} className={next === 0 ? ' text-[#C48F56] cursor-pointer mx-2 ' : ' text-white cursor-pointer mx-2 ' } >01</p>
                             {next === 0 && (
                                 <div className=' h-[1px] bg-white w-6 mx-2 ' />
                             )}
-                            <p className={next === 1 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' }>02</p>
+                            <p onClick={()=> setNext(1)} className={next === 1 ? ' text-[#C48F56] cursor-pointer mx-2 ' : ' text-white cursor-pointer mx-2 ' }>02</p>
                             {next === 1 && (
                                 <div className=' h-[1px] bg-white w-6 mx-2 ' />
                             )}
-                            <p className={next === 2 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' }>03</p>
+                            <p onClick={()=> setNext(2)} className={next === 2 ? ' text-[#C48F56] cursor-pointer mx-2 ' : ' text-white cursor-pointer mx-2 ' }>03</p>
                             {next === 2 && (
                                 <div className=' h-[1px] bg-white w-6 mx-2 ' />
                             )}
