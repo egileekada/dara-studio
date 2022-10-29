@@ -31,9 +31,7 @@ export default function SliderComponent(props: any) {
   
     console.log(windowDimensions)
 
-    let width: any = windowDimensions.width
-
-    let back = width*3
+    let width: any = windowDimensions.width 
 
     React.useEffect(() => {  
         const t1 = setTimeout(() => {  
@@ -41,7 +39,7 @@ export default function SliderComponent(props: any) {
             if(next > 1){ 
                 setNext(0)
                 props.next(0)
-                ref.current.scrollLeft +=  -back
+                ref.current.scrollLeft +=  -width*3
             } else { 
                 setNext(next+1)
                 props.next(next+1)
@@ -51,10 +49,14 @@ export default function SliderComponent(props: any) {
     },) 
 
     const ClickHandler =(item: any)=>{
-        if(next > item){
+        if(next < item-1){ 
             setNext(0)
+            ref.current.scrollLeft +=  -width*3
+            return
+        }else if(next > item){
+            setNext(item)
             ref.current.scrollLeft +=  windowDimensions.width
-        }
+        } 
     }
 
     return (
@@ -94,15 +96,15 @@ export default function SliderComponent(props: any) {
                 <p className=' font-Poppins-Regular text-sm hidden lg:flex items-center ' >READ MORE <span className='text-xl ml-1' >{">"}</span></p>
             </div>
             <div className=' w-full absolute z-30 bottom-28 lg:hidden flex justify-center items-center ' >
-                <p className={next === 0 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' } >01</p>
+                <p  onClick={()=> ClickHandler(0) } className={next === 0 ? ' text-[#C48F56] mx-2 cursor-pointer ' : ' text-white cursor-pointer mx-2 ' } >01</p>
                 {next === 0 && (
                     <div className=' h-[1px] bg-white w-6 mx-2 ' />
                 )}
-                <p className={next === 1 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' }>02</p>
+                <p onClick={()=> ClickHandler(1) } className={next === 1 ? ' text-[#C48F56] mx-2 cursor-pointer ' : ' text-white cursor-pointer mx-2 ' }>02</p>
                 {next === 1 && (
                     <div className=' h-[1px] bg-white w-6 mx-2 ' />
                 )}
-                <p className={next === 2 ? ' text-[#C48F56] mx-2 ' : ' text-white mx-2 ' }>03</p>
+                <p onClick={()=> ClickHandler(2) } className={next === 2 ? ' text-[#C48F56] mx-2 cursor-pointer ' : ' text-white cursor-pointer mx-2 ' }>03</p>
                 {next === 2 && (
                     <div className=' h-[1px] bg-white w-6 mx-2 ' />
                 )}
