@@ -84,7 +84,7 @@ export default function SliderComponent(props: any) {
                                 <motion.div className='w-screen h-screen  overflow-hidden absolute inset-0 ' {...boxAnimation} > 
                                     <img src={item} className="absolute h-screen object-cover overflow-hidden lg:pb-[60px] lg:pr-[60px] w-screen inset-0" />
 
-                                    <div className=' absolute lg:px-0 px-6 lg:pl-20 pb-[60px] lg:bottom-24 bottom-40 z-30 text-white ' >
+                                    <div className=' absolute lg:px-0 px-6 lg:pl-20 pb-[60px] lg:bottom-24 bottom-44 z-30 text-white ' >
                                         <div className=' flex items-center ' > 
                                             <div className=' h-[1.2px] bg-[#C48F56] w-6 ' />
                                             <p className=' font-Poppins-Regular text-sm ml-4 ' >Portraits</p>
