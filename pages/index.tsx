@@ -156,9 +156,18 @@ export default function Index() {
                         <div className=' w-full absolute h-full flex items-center justify-center  ' > 
                             <div style={{ borderRadius: "9999px" }} className=" bg-[#C48F56] w-[6px] h-[6px] rounded-full " /> 
                         </div>
-                        <div className=' text-white w-32 mx-auto flex relative z-20 justify-center font-Poppins-Medium  ' > 
-                            <button onClick={()=> setTab(2)} >ABOUT</button>               
-                        </div> 
+                        {tab !== 2 && 
+                            <div className=' text-white w-32 mx-auto flex relative z-20 justify-center font-Poppins-Medium  ' > 
+                                <button onClick={()=> setTab(2)} >ABOUT</button>               
+                            </div> 
+                        }
+                        {tab === 2 && 
+                            <div onClick={()=> setTab(0)} id='' className='h-full flex relative z-20 mx-auto justify-center items-center text-white w-28 ' >
+                                <button className=' h-12 px-3 w-full flex items-center rounded bg-[#1D1D1D] ' >
+                                    <img src="/images/close.png" className=' w-5 mt-1 mr-2 '  /><Link href="" >CLOSE</Link>
+                                </button>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
