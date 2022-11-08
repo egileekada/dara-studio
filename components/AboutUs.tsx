@@ -4,7 +4,7 @@ import React from 'react'
 export default function AboutUs() {
  
     return ( 
-        <div className="  lg:mt-0 mt-1 lg:pb-0 pb-28 lg:ppx-0 px-6 bg-[#121212] overflow-y-hidden w-full h-screen flex lg:flex-row flex-col items-center  " > 
+        <div className="  lg:mt-0 mt-1 lg:pb-0 pb-48 lg:px-0 px-6 bg-[#121212] overflow-y-auto lg:overflow-y-hidden w-full h-screen flex lg:flex-row flex-col items-center  " > 
             <div className=' w-full flex lg:mt-0  ' > 
                 <img  src="/images/About1.png" alt='one' className=' w-full h-full object-cover ' /> 
             </div> 

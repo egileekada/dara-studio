@@ -11,24 +11,24 @@ export default function Index() {
 
     const [next, setNext] = React.useState(0) 
     const [tab, setTab] = React.useState(0) 
-    function getWindowDimensions() {
-      const { innerWidth: width} = window;
-      return {
-        width 
-      };
-    }
+    // function getWindowDimensions() {
+    //   const { innerWidth: width} = window;
+    //   return {
+    //     width 
+    //   };
+    // }
 
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
+    // const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    // useEffect(() => {
+    //   function handleResize() {
+    //     setWindowDimensions(getWindowDimensions());
+    //   }
   
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    //   window.addEventListener('resize', handleResize);
+    //   return () => window.removeEventListener('resize', handleResize);
+    // }, []);
 
-    const xOffset = windowDimensions.width;
+    const xOffset =  200;
 
     const variants = {
         enter: {
@@ -108,7 +108,7 @@ export default function Index() {
 
                         {tab !== 2  &&  
                             <button onClick={()=> setTab(2)} className='-rotate-90  h-full flex justify-center items-center px-4 text-white w-full font-Poppins-Medium ' >
-                                About_Us
+                                About
                             </button>
                         }
                         {tab === 2 && ( 
