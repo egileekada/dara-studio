@@ -74,17 +74,17 @@ export default function SliderComponent(props: any) {
     const images: any = [ '/slide.png', '/slide1.png', '/slide2.png' ]  
 
     return (
-        <div className="w-full h-screen overflow-x-auto  overflow-hidden flex scrollBody "  >
+        <div className="w-full h-[90vh]  overflow-x-auto  overflow-hidden flex scrollBody "  >
             <div className=' absolute z-10 inset-0 ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>  
-            <div className='  w-full h-screen  relative  ' > 
+            <div className='  w-full h-[90vh]   relative  ' > 
                 {images.map((item: any, index: any) => { 
                     return(  
                         <AnimatePresence key={index} >
                             {index === next &&
-                                <motion.div className='w-screen h-screen  overflow-hidden absolute inset-0 ' {...boxAnimation} > 
-                                    <img src={item} className="absolute h-screen object-cover overflow-hidden lg:pb-[60px] lg:pr-[60px] w-screen inset-0" />
+                                <motion.div className='w-screen h-[90vh]   overflow-hidden absolute inset-0 ' {...boxAnimation} > 
+                                    <img src={item} className="absolute h-[90vh]  object-cover overflow-hidden lg:pb-[60px] lg:pr-[60px] w-screen inset-0" />
 
-                                    <div className=' absolute lg:px-0 px-6 lg:pl-20 pb-[60px] lg:bottom-24 bottom-52 z-30 text-white ' >
+                                    <div className=' absolute lg:px-0 px-6 lg:pl-20 pb-[60px] lg:bottom-24 bottom-24 z-30 text-white ' >
                                         <div className=' flex items-center ' > 
                                             <div className=' h-[1.2px] bg-[#C48F56] w-6 ' />
                                             <p className=' font-Poppins-Regular text-sm ml-4 ' >Portraits</p>
