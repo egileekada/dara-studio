@@ -15,12 +15,13 @@ export default function Footer(){
                     <p className=' font-Poppins-Bold text-[32px] lg:text-right text-center lg:text-[35px] leading-snug ' >Contacts</p>
                     <div className=" w-full lg:w-72 font-Poppins-Regular mt-4 flex lg:flex-row flex-col items-center " >
                         <p>Phone:</p>  
-                            <p className="lg:ml-auto ">+2349077601790</p> 
+                            <p className="lg:ml-auto ">08109658240</p> 
                     </div>
                     <div className=" w-full lg:w-72 font-Poppins-Regular mt-6 lg:mt-1 flex lg:flex-row flex-col items-center " >
                         <p className="  " >Email:</p> 
-                            <p className=" lg:ml-auto " >support@sbdstudios.com</p> 
+                            <p className=" lg:ml-auto " >info@shotbydara.com</p> 
                     </div> 
+                            <p className=" lg:ml-auto mt-2 " >shotbydarastudios@gmail.com</p> 
                 </div>
             </div>
             {/* <img alt="footer" src="/images/sbd.png" className=" w-20 ml-20 lg:flex hidden "  /> */}

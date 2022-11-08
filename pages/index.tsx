@@ -1,15 +1,50 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import SliderComponent from '../components/SliderComponent'
 import Categories from '../components/Categories'
 import AboutUs from '../components/AboutUs'
+import { motion, AnimatePresence } from "framer-motion"; 
 
 export default function Index() {
 
     const [next, setNext] = React.useState(0) 
     const [tab, setTab] = React.useState(0) 
+    function getWindowDimensions() {
+      const { innerWidth: width} = window;
+      return {
+        width 
+      };
+    }
+
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const xOffset = windowDimensions.width;
+
+    const variants = {
+        enter: {
+        x: -xOffset,
+        opacity: 0
+        },
+        active: {
+        x: 0,
+        opacity: 1,
+        transition: { delay: 0.5 }
+        },
+        exit:{
+        x: xOffset,
+        opacity: 0
+        }
+    };
 
     return (
             <div className=" w-full h-screen  overflow-hidden font-Poppins-Medium bg-[#0F0F0F] flex flex-col ">
@@ -44,9 +79,13 @@ export default function Index() {
                         <Categories />
                     )} 
 
-                    {tab === 2 && (
-                        <AboutUs />
-                    )}
+                    <AnimatePresence  >
+                        {tab === 2 && (
+                            <motion.div className=' w-full h-full ' {...variants}> 
+                                <AboutUs />
+                            </motion.div >
+                        )}
+                    </AnimatePresence>
 
                     <div className=' w-[60px] relative z-50 hidden lg:flex flex-col ' >
                         
@@ -75,7 +114,9 @@ export default function Index() {
                         {tab === 2 && ( 
                             <div  id='' className='-rotate-90  h-full flex justify-center items-center pl-1 text-white w-full ' >
                                 <button  onClick={()=> setTab(0)} className=' py-3 px-2 w-full text-sm flex  items-center rounded bg-[#1D1D1D] ' >
+                                    <div className=' flex items-center bg-[#1D1D1D]' >
                                     <img src="/images/close.png" className=' w-3 mr-3 '  />CLOSE
+                                    </div>
                                 </button>
                             </div> 
                         )}
