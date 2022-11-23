@@ -75,7 +75,7 @@ export default function SliderComponent(props: any) {
 
     return (
         <div className="w-full h-[90vh]  overflow-x-auto  overflow-hidden flex scrollBody "  >
-            <div className=' absolute z-10 inset-0 ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>  
+            <div className=' fixed z-10 inset-0 ' style={{background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40.1%, #000000 100%)"}}/>  
             <div className='  w-full h-[90vh]   relative  ' > 
                 {images.map((item: any, index: any) => { 
                     return(  
