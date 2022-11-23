@@ -152,7 +152,7 @@ export default function SliderComponent(props: any) {
                 )}
             </AnimatePresence>  */}
 
-            <div className=' hidden items-center ml-6 absolute lg:flex lg:px-0 px-6 lg:pl-20 lg:bottom-20 bottom-36 lg:right-28 right-6 z-20 ' >
+            <div className=' hidden items-center ml-6 absolute lg:flex lg:px-0 px-6 lg:pl-20 lg:bottom-20 bottom-28 lg:right-28 right-6 z-20 ' >
                 <img onClick={Back}  src='/images/left.png' className=' w-2 cursor-pointer ' />
                 <img onClick={Next} src='/images/right.png' className=' w-2 ml-5 cursor-pointer ' />
             </div>
